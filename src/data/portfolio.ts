@@ -57,7 +57,7 @@ export const projects: Project[] = [
     description:
       "Next.js + TypeScript + Tailwind CSS で構築した自己紹介サイト。",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/sinagaki/portfolio",
+    github: "https://github.com/soma0822/portfolio",
   },
   {
     id: 2,
@@ -71,5 +71,5 @@ export const projects: Project[] = [
 
 export const contactInfo: ContactInfo = {
   email: "soma0822soma@gmail.com",
-  github: "https://github.com/sinagaki",
+  github: "https://github.com/soma0822",
 };
