@@ -67,6 +67,14 @@ export const projects: Project[] = [
     tags: ["Flutter", "Dart", "iOS"],
     url: "https://apps.apple.com/jp/app/textbook/id6772737099",
   },
+  {
+    id: 3,
+    title: "Image Alignment Tool",
+    description:
+      "2枚の画像の位置ずれ・拡大縮小を自動補正し、差分を可視化する画像評価支援ツール（Web版 / デスクトップ版）。",
+    tags: ["Python", "画像処理"],
+    github: "https://github.com/soma0822/image-alignment-tool",
+  },
 ];
 
 export const contactInfo: ContactInfo = {
