@@ -7,10 +7,10 @@ interface ContactProps {
 
 export default function Contact({ info }: ContactProps) {
   return (
-    <section id="contact" className="py-24 px-6">
+    <section id="contact" className="py-24 px-6 bg-white dark:bg-zinc-950">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-4">Contact</h2>
-        <p className="text-zinc-500 mb-10">
+        <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">Contact</h2>
+        <p className="text-zinc-500 dark:text-zinc-400 mb-10">
           お仕事のご相談・勉強会のお誘いなど、お気軽にどうぞ。
         </p>
 
@@ -18,30 +18,30 @@ export default function Contact({ info }: ContactProps) {
           {/* 左: リンク一覧 */}
           <ul className="flex flex-col gap-4">
             <li className="flex items-center gap-3">
-              <span className="text-sm font-mono text-zinc-400 w-16">Email</span>
-              <a href={`mailto:${info.email}`} className="text-zinc-900 hover:underline">
+              <span className="text-sm font-mono text-zinc-400 dark:text-zinc-500 w-16">Email</span>
+              <a href={`mailto:${info.email}`} className="text-zinc-900 dark:text-zinc-100 hover:underline">
                 {info.email}
               </a>
             </li>
             <li className="flex items-center gap-3">
-              <span className="text-sm font-mono text-zinc-400 w-16">GitHub</span>
+              <span className="text-sm font-mono text-zinc-400 dark:text-zinc-500 w-16">GitHub</span>
               <a
                 href={info.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-900 hover:underline"
+                className="text-zinc-900 dark:text-zinc-100 hover:underline"
               >
                 {info.github.replace("https://", "")}
               </a>
             </li>
             {info.twitter && (
               <li className="flex items-center gap-3">
-                <span className="text-sm font-mono text-zinc-400 w-16">X</span>
+                <span className="text-sm font-mono text-zinc-400 dark:text-zinc-500 w-16">X</span>
                 <a
                   href={info.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-zinc-900 hover:underline"
+                  className="text-zinc-900 dark:text-zinc-100 hover:underline"
                 >
                   {info.twitter.replace("https://", "")}
                 </a>

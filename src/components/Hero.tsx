@@ -7,15 +7,15 @@
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 pt-16">
+    <section className="min-h-screen flex items-center justify-center px-6 pt-16 bg-white dark:bg-zinc-950">
       <div className="max-w-4xl w-full">
         <p className="text-sm font-mono text-zinc-400 mb-4 tracking-widest uppercase">
           Hello, world.
         </p>
-        <h1 className="text-5xl sm:text-6xl font-bold text-white leading-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl font-bold text-zinc-900 dark:text-zinc-50 leading-tight mb-6">
           Soma Inagaki
         </h1>
-        <p className="text-xl text-zinc-500 max-w-xl leading-relaxed mb-10">
+        <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed mb-10">
           Android Camera Vendor HAL 開発をメインに、
           C / C++ を用いたカメラ制御・評価・不具合解析に取り組んでいます。
           Python や Excel VBA による業務自動化に加え、
@@ -24,13 +24,13 @@ export default function Hero() {
         <div className="flex gap-4">
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 bg-zinc-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-zinc-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-zinc-900 text-white dark:bg-zinc-50 dark:text-zinc-900 px-6 py-3 rounded-full text-sm font-medium hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors"
           >
             プロジェクトを見る
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 px-6 py-3 rounded-full text-sm font-medium hover:bg-zinc-50 transition-colors"
+            className="inline-flex items-center gap-2 border border-zinc-200 text-zinc-700 dark:border-zinc-700 dark:text-zinc-300 px-6 py-3 rounded-full text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors"
           >
             お問い合わせ
           </a>

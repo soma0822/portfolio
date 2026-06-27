@@ -35,17 +35,17 @@ function SkillGroup({ category, skills }: SkillGroupProps) {
 
   return (
     <div>
-      <h3 className="text-sm font-mono text-zinc-400 uppercase tracking-widest mb-4">
+      <h3 className="text-sm font-mono text-zinc-400 dark:text-zinc-500 uppercase tracking-widest mb-4">
         {categoryLabel[category]}
       </h3>
       <ul className="flex flex-col gap-3">
         {filtered.map((skill) => (
           <li
             key={skill.name}
-            className="flex flex-col gap-1 bg-white border border-zinc-100 rounded-xl px-5 py-4"
+            className="flex flex-col gap-1 bg-white border border-zinc-100 dark:bg-zinc-900 dark:border-zinc-800 rounded-xl px-5 py-4"
           >
-            <span className="font-semibold text-zinc-900">{skill.name}</span>
-            <span className="text-sm text-zinc-500">{skill.description}</span>
+            <span className="font-semibold text-zinc-900 dark:text-zinc-100">{skill.name}</span>
+            <span className="text-sm text-zinc-500 dark:text-zinc-400">{skill.description}</span>
           </li>
         ))}
       </ul>
@@ -55,9 +55,9 @@ function SkillGroup({ category, skills }: SkillGroupProps) {
 
 export default function Skills({ skills }: SkillsProps) {
   return (
-    <section id="skills" className="py-24 px-6">
+    <section id="skills" className="py-24 px-6 bg-white dark:bg-zinc-950">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-zinc-900 mb-12">Skills</h2>
+        <h2 className="text-3xl font-bold text-zinc-900 dark:text-zinc-50 mb-12">Skills</h2>
         <div className="grid sm:grid-cols-2 gap-10">
           <SkillGroup category="web"      skills={skills} />
           <SkillGroup category="mobile"   skills={skills} />

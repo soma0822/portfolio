@@ -18,7 +18,7 @@ export default function Home() {
         <Projects projects={projects} />
         <Contact  info={contactInfo} />
       </main>
-      <footer className="py-8 px-6 border-t border-zinc-100 text-center text-sm text-zinc-400">
+      <footer className="py-8 px-6 border-t border-zinc-100 dark:border-zinc-800 bg-white dark:bg-zinc-950 text-center text-sm text-zinc-400 dark:text-zinc-500">
         © {new Date().getFullYear()} Soma Inagaki
       </footer>
     </>
