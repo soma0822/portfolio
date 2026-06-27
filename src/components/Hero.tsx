@@ -12,7 +12,7 @@ export default function Hero() {
         <p className="text-sm font-mono text-zinc-400 mb-4 tracking-widest uppercase">
           Hello, world.
         </p>
-        <h1 className="text-5xl sm:text-6xl font-bold text-zinc-900 leading-tight mb-6">
+        <h1 className="text-5xl sm:text-6xl font-bold text-white leading-tight mb-6">
           Soma Inagaki
         </h1>
         <p className="text-xl text-zinc-500 max-w-xl leading-relaxed mb-10">

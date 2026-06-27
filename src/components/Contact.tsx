@@ -9,7 +9,7 @@ export default function Contact({ info }: ContactProps) {
   return (
     <section id="contact" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-zinc-900 mb-4">Contact</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">Contact</h2>
         <p className="text-zinc-500 mb-10">
           お仕事のご相談・勉強会のお誘いなど、お気軽にどうぞ。
         </p>
