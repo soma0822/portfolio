@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Soma Inagaki — Portfolio
 
-## Getting Started
+Next.js + TypeScript + Tailwind CSS で構築したポートフォリオサイト。
 
-First, run the development server:
+## 技術スタック
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **Email**: Resend
+
+## 機能
+
+- Hero / About / Skills / Projects / Contact セクション
+- お問い合わせフォーム（Route Handler + Resend によるメール送信）
+
+## ローカル開発
 
 ```bash
+# 依存関係インストール
+npm install
+
+# 環境変数を設定
+cp .env.local.example .env.local
+# .env.local に Resend の API キーを記入
+
+# 開発サーバー起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000) で確認できます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 環境変数
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| 変数名 | 説明 |
+|--------|------|
+| `RESEND_API_KEY` | Resend の API キー（[resend.com](https://resend.com) で取得） |
+| `CONTACT_TO_EMAIL` | お問い合わせの送信先メールアドレス |
