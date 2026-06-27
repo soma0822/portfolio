@@ -41,3 +41,16 @@ export interface ContactInfo {
   github: string;
   twitter?: string; // オプション
 }
+
+// お問い合わせフォームの入力値
+export interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+// API レスポンスの型
+export interface ApiResponse {
+  success: boolean;
+  message: string;
+}
